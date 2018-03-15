@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoftUni Blog</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top text-uppercase">
+            <div class="container">
+                <div clas="navbar-header">
+                    <a href="index.html" class="navbar-brand">SoftUni Blog</a>
+                    <button type="button"
+                            class="navbar-toggle"
+                            data-toggle="collapse"
+                            data-target="#navCont"
+                            aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navCont">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="register.html">Register</a> </li>
+                        <li><a href="login.html">Login</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container body-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <article>
+                        <header>
+                            <h2>Sofia - the social Robot?</h2>
+                        </header>
+                        <p>The clothes are meshes that can be modelled
+                            directly in Blender, or in another package
+                            and then imported into Blender as an obj file.
+                            Note that the mesh type is Clothing, which
+                            is the default unless the mesh has been
+                            declared to be a human. A simple method
+                            to obtain a starting point modelling is
+                            to duplicate part of the human mesh and
+                            separate it from the human. However,
+                            in this case the duplicated mesh will
+                            still be a human. To change the mesh type,
+                            press the toggle button Human. The status
+                            is now changed into Clothing.</p>
+
+                        <p>After loading the human, the next step is to
+                            "glue" the clothes to the human, in order
+                            that they will automatically fit the body
+                            changes. To control this association,
+                            MakeClothes uses vertex groups. Each clothing
+                            vertex must belong to exactly one vertex group,
+                            and a vertex group with the same name must
+                            exist in the human mesh as well. Only human
+                            vertices in the correct vertex group will be
+                            considered when making clothes.</p>
+
+                        <p>Vertex groups speed up the clothes-making process
+                            by pruning the search tree, and can be used
+                            to control the appearance of clothes as well.
+                            However, assigning vertex groups can be quite
+                            tedious, and in many cases it is sufficient
+                            to let MakeClothes create vertex groups
+                            automatically. This is done automatically
+                            when a human mesh is loaded. If a clothing
+                            mesh does not have any vertex groups, it is
+                            also done automatically, when the MakeClothes
+                            button is pressed.</p>
+                        <small class="author">
+                            Ivan Ivanov
+                        </small>
+                        <footer>
+                            <div class="pull-right">
+                                <a class="btn btn-default btn-xs"
+                                   href="viewpost.html">Read more &raquo;</a>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container modal-footer">
+            <p>&copy; 2018 - Software Uneversity Foundation</p>
+        </div>
+    </footer>
+</body>
+</html>
